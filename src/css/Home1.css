@@ -1,0 +1,163 @@
+/* HomeCleaning.css */
+
+/* General Styling */
+body{
+  background: linear-gradient(#e5e4e9,#cab7e1c0, rgba(156, 161, 232, 0.872)), url("../Images/12.jpg") center/cover;
+
+}
+.home-cleaning-container {
+  font-family: "Poppins", sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  
+}
+
+/* Hero Section */
+.home-cleaning-hero {
+  background: linear-gradient(to right, #007bff, #0056b3);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.home-cleaning-hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.home-cleaning-hero p {
+  font-size: 18px;
+}
+
+/* Content Section with Grid Layout */
+.home-cleaning-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.home-cleaning-text h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.home-cleaning-text p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.home-cleaning-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home-cleaning-text li {
+  font-size: 16px;
+  margin: 5px 0;
+  color: #28a745;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.home-cleaning-text li::before {
+  content: "✔";
+  color: #28a745;
+  font-weight: bold;
+}
+
+.home-cleaning-btn {
+  background: #28a745;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-cleaning-btn:hover {
+  background: #218838;
+  transform: scale(1.05);
+}
+
+/* Image Styling */
+.home-cleaning-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.home-cleaning-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Services Section */
+.home-cleaning-services {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.home-cleaning-services h2 {
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Services Grid */
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.service-item {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+  font-size: 22px;
+  color: #007bff;
+}
+
+.service-item p {
+  font-size: 15px;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-cleaning-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .home-cleaning-text {
+    padding: 0 15px;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+}
